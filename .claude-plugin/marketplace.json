@@ -1,0 +1,12 @@
+{
+  "name": "leetclaude",
+  "description": "LeetClaude: the anti-LeetCode. Code requests cost a LeetCode problem.",
+  "owner": { "name": "Dominick Caponi", "url": "https://github.com/dcaponi" },
+  "plugins": [
+    {
+      "name": "leetclaude",
+      "source": "./",
+      "description": "Solve a LeetCode problem sized to your request before your next prompt. Claude works in the background meanwhile."
+    }
+  ]
+}

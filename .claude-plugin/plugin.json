@@ -1,0 +1,10 @@
+{
+  "name": "leetclaude",
+  "version": "1.0.0",
+  "description": "Your prompt has been received and is pending a coding interview. Solve a LeetCode problem sized to your request before your next prompt; Claude does the real work in the background.",
+  "author": { "name": "Dominick Caponi", "url": "https://github.com/dcaponi" },
+  "homepage": "https://github.com/dcaponi/leetclaude",
+  "repository": "https://github.com/dcaponi/leetclaude",
+  "license": "MIT",
+  "keywords": ["leetcode", "interview", "joke", "practice", "hooks"]
+}

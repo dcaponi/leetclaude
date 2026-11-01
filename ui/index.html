@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LeetClaude</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2' y='2' width='28' height='28' fill='%23ff4d94' stroke='%230e0d0c' stroke-width='2' transform='rotate(-6 16 16)'/><text x='16' y='23.5' font-size='19' text-anchor='middle' font-family='Impact,Anton,sans-serif' fill='%230e0d0c'>L</text><path d='M6 22 L26 10' stroke='%23c6ff3d' stroke-width='3.5'/></svg>">
+<link rel="preload" href="fonts/anton-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/atkinson-hyperlegible-next-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/permanent-marker-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand" id="brand" aria-label="LeetClaude">
+    <span class="logo" aria-hidden="true">L</span>
+    <div>
+      <div class="wordmark" aria-hidden="true"><span class="leet">Leet</span><span class="code">Code</span><span class="scrawl" id="scrawl">Claude</span></div>
+      <div class="tag" id="tagline">Your prompt has been received and is pending a coding interview.</div>
+    </div>
+  </div>
+  <div class="claude" id="claude"></div>
+  <div class="clock" id="clock" title="Interview clock"></div>
+  <button class="ghost" id="statsBtn" type="button">Stats</button>
+</header>
+
+<div id="parked" class="parked" hidden></div>
+<main id="app"><div class="empty">Loading…</div></main>
+
+<dialog id="modal">
+  <form method="dialog">
+    <h3 id="modalTitle"></h3>
+    <p id="modalBody"></p>
+    <div class="row end">
+      <button value="cancel" class="ghost">Keep going</button>
+      <button value="ok" id="modalOk" class="danger">Confirm</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="statsModal" class="wide">
+  <form method="dialog">
+    <h3>Interview record</h3>
+    <div id="statsBody"></div>
+    <div class="row end"><button value="close" class="ghost">Close</button></div>
+  </form>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
